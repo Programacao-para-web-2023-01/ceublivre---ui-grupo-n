@@ -7,7 +7,9 @@
 * Preço do produto
 * Variações do produto (tamanho, cor, etc.)
 * Botão de adicionar ao carrinho
-* Comentários e avaliações do produto
+* <b>Comentários e avaliações do produto</b>
+
+---
 
 ### Grupo N - Interações
 
