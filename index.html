@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comentários</title>
+</head>
+<body>
+    <div class="writeComent">
+    <h2>Comentar</h2>
+        <form action="" method="POST">
+            <label for="Nome">Nome:</label>
+            <textarea name="nome" id="nome" cols="10" rows="2" placeholder="Digite seu nome" required></textarea>
+
+            <label for="comentario">Comentário:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br>
+        
+            <button type="submit" >Enviar</button>
+        </form>
+    </div>
+
+    <div class="coment">
+        <h2>Comentários</h2>
+        <ul id="comentarios-lista">
+            <li>
+                <div class="comentario-item">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magnam accusantium delectus atque odit minus odio laborum nobis. Eligendi minima sapiente possimus laudantium voluptas fugit illo cumque, molestiae totam quibusdam. afsdfasdfasdf fasdfasd</span>
+                    <button class="comentar-btn">Comentar</button>
+                    <div class="resposta-form">
+                        <textarea class="resposta-textarea" rows="2" placeholder="Digite sua resposta"></textarea>
+                        <button class="responder-btn">Responder</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="comentario-item">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veritatis nulla deleniti eos consequuntur tempora error culpa voluptas odio quaerat, vel animi optio amet architecto repellendus mollitia adipisci, similique ipsum?</span>
+                    <button class="comentar-btn">Comentar</button>
+                    <div class="resposta-form">
+                        <textarea class="resposta-textarea" rows="2" placeholder="Digite sua resposta"></textarea>
+                        <button class="responder-btn">Responder</button>
+                    </div>
+                </div>
+            </li>
+            <!-- Adicione mais li para cada comentário -->
+        </ul>
+    </div>
+    
+    <script>
+        // Seletor de todos os botões "Comentar"
+        var btnsComentar = document.getElementsByClassName('comentar-btn');
+
+        // Adicionando o evento de clique em cada botão "Comentar"
+        for (var i = 0; i < btnsComentar.length; i++) {
+            btnsComentar[i].addEventListener('click', function() {
+                var respostaForm = this.nextElementSibling;
+                respostaForm.style.display = 'block';
+            });
+        }
+    </script>
+
+
+</body>
+</html>

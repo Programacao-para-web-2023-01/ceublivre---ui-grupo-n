@@ -1,0 +1,97 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #00318b;
+    color: #f8f8f8;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.writeComent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+textarea#comentario {
+    height: 120px;
+    margin: 30px 0 25px 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+button {
+    background: #000000ad;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #00318b;
+}
+
+
+.coment {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 470px;
+    margin: auto;
+    min-height: 200px; /* ou qualquer outra altura mínima desejada */
+}
+
+.coment li {
+    background-color: rgba(44, 44, 44, 0.137);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0; /* Alterei apenas o valor vertical para 20px */
+    list-style: none;
+}
+
+.comentario-item {
+    position: relative;
+}
+
+.comentar-btn {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.resposta-form {
+    display: none;
+    margin-top: 10px;
+}
+
+.resposta-form .responder-btn {
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 5px;
+}
